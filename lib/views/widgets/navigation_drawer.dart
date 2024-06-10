@@ -1,12 +1,10 @@
+import 'package:experensies/views/screens/login_page/login_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
-
 class CustomDrawer extends StatelessWidget {
   const CustomDrawer({super.key});
-
-  
 
   @override
   Widget build(BuildContext context) {
@@ -44,7 +42,7 @@ class CustomDrawer extends StatelessWidget {
               ),
               const Gap(20),
               const Text(
-                'Mardon\nHakimov',
+                'John\nDepler',
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 30,
@@ -52,19 +50,18 @@ class CustomDrawer extends StatelessWidget {
                 ),
               ),
               const Gap(50),
-              _buildDrawerItem(Icons.grid_view, 'Home', () {
-                
-              }),
+              _buildDrawerItem(Icons.grid_view, 'Home', () {}),
               _buildDrawerItem(
-                  Icons.admin_panel_settings_outlined, 'Admin Page', () {
-                
-              }),
-              _buildDrawerItem(CupertinoIcons.settings_solid, 'Settings', () {
-               
-              }),
-              _buildDrawerItem(Icons.login_rounded, 'Log Out', () {
-               
-              }),
+                  Icons.admin_panel_settings_outlined, 'Admin Page', () {}),
+              _buildDrawerItem(
+                  CupertinoIcons.settings_solid, 'Settings', () {}),
+              _buildDrawerItem(
+                Icons.login_rounded,
+                'Log Out',
+                () {
+                 
+                },
+              ),
               const Spacer(),
               const Text(
                 "Good",

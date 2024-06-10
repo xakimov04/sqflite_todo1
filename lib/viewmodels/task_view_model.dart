@@ -12,6 +12,10 @@ class TaskViewModel extends ChangeNotifier {
     _tasks = await _dbHelper.readAllTasks();
     notifyListeners();
   }
+  void updateTaskStatus(Task task, String newStatus) {
+    task.status = newStatus;
+    notifyListeners();
+  }
 
   Future<void> addTask(Task task) async {
     await _dbHelper.create(task);

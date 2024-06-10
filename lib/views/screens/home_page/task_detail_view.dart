@@ -1,7 +1,7 @@
 import 'package:experensies/viewmodels/task_view_model.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import '../models/task.dart';
+import '../../../models/task.dart';
 import 'package:intl/intl.dart';
 
 class TaskDetailView extends StatefulWidget {
